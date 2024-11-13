@@ -1,0 +1,32 @@
+POST http://localhost:4001/api/auth/register
+Content-Type: application/json
+
+{
+    "email": "kk@gmail.com",
+    "password": "123456",
+    "name": "Nama Lengkap"
+}
+
+###
+POST http://localhost:4001/api/auth/login
+Content-Type: application/json
+
+{
+    "email": "contoh@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:4001/api/mahasiswa
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ii1PQlVIN1poWTAyaXlCb0xUaVBOIiwiaWF0IjoxNzMxNDMwNDY2LCJleHAiOjE3MzE1MTY4NjZ9.PDdDWQvcmLLm_Ush0C_o_U7BA92jnhimtAlq4WvFmiE
+
+###
+POST http://localhost:4001/api/mahasiswa
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6Ii1PQlVIN1poWTAyaXlCb0xUaVBOIiwiaWF0IjoxNzMxNDMwNDY2LCJleHAiOjE3MzE1MTY4NjZ9.PDdDWQvcmLLm_Ush0C_o_U7BA92jnhimtAlq4WvFmiE
+Content-Type: application/json
+
+{
+    "nama": "Nama",
+    "npm": "1234567890",
+    "kelas": "IF9"
+}
